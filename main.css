@@ -1,0 +1,75 @@
+      @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap");
+
+      * {
+        font-family: "Vazirmatn", sans-serif;
+      }
+
+      .grade-card {
+        transition: all 0.3s ease;
+      }
+
+      .grade-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-button {
+        transition: all 0.3s ease;
+      }
+
+      .nav-button:hover {
+        transform: translateY(-2px);
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .glass-card:hover {
+        box-shadow: 0 6px 40px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .glass-header {
+        background: rgba(
+          255,
+          255,
+          255,
+          0.15
+        ); /* very light white, transparent */
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+            .mobile-menu {
+        display: none;
+      }
+      .mobile-menu.active {
+        display: flex;
+      }
+      .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+      }
+      .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
