@@ -48,4 +48,32 @@
           hamburger.classList.remove('active');
           mobileMenu.classList.remove('active');
         });
-      });
+      });  
+      const teacherData = {
+        teacher1: {
+          name: "آقای احمدی",
+          bio: "کارشناس ارشد ریاضی با بیش از ۱۲ سال سابقه تدریس در مدارس تیزهوشان، مؤلف کتاب‌های تخصصی و برگزارکننده کلاس‌های حل مسئله."
+        },
+        teacher2: {
+          name: "خانم رضایی",
+          bio: "مدرس باسابقه علوم، متخصص در آموزش مفهومی و تدریس در مدارس برتر. دارای سابقه‌ی پژوهشی و اجرای آزمایش‌های علمی برای دانش‌آموزان."
+        },
+        teacher3: {
+          name: "آقای محمدی",
+          bio: "مدرس دروس هوش و استعداد تحلیلی، متخصص در آموزش مهارت‌های حل تست و آماده‌سازی برای آزمون‌های تیزهوشان."
+        }
+      };
+
+      function openModal(id) {
+        const modal = document.getElementById("teacherModal");
+        document.getElementById("modalName").textContent = teacherData[id].name;
+        document.getElementById("modalBio").textContent = teacherData[id].bio;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("teacherModal");
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+      }

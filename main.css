@@ -73,3 +73,17 @@
       .hamburger.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
       }
+      
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+

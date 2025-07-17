@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معرفی اساتید | داشنوران</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+      body {
+        background: linear-gradient(
+          139deg,
+          rgba(49, 8, 118, 1) 0%,
+          rgba(174, 39, 160, 1) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="min-h-screen text-white ">
+
+    <!-- Header -->
+    <header class="glass-header top-4 mx-4 p-4 z-50">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-4 space-x-reverse">
+          <div
+            class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">🎓</span>
+          </div>
+          <h1 class="text-l font-bold text-white whitespace-nowrap">
+            آموزشگاه علمی آزاد داشنوران
+          </h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex flex-wrap justify-end gap-2">
+          <a
+            href="/index.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-800 transition-colors"
+            >خانه</a
+          >
+          <a
+            href="pages/grade5.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >پنجم</a
+          >
+          <a
+            href="pages/grade6.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >ششم</a
+          >
+          <a
+            href="pages/grade7.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >هفتم</a
+          >
+          <a
+            href="pages/grade9.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >نهم</a
+          >
+          <a
+            href="pages/grade10.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >دهم</a
+          >
+          <a
+            href="pages/grade11.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >یازدهم</a
+          >
+          <a
+            href="pages/grade12.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >دوازدهم</a
+          >
+          <a
+            href="pages/teachers.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-black hover:bg-purple-600 bg-white hover:text-white transition-colors"
+            >معرفی اساتید</a
+          >
+          <a
+            href="pages/registration.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >نام‌نویسی</a
+          >
+          <a
+            href="pages/topstudents.html"
+            class="nav-button px-3 py-1.5 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+            >نفرات برتر</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="md:hidden hamburger focus:outline-none" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden flex-col mt-4 space-y-2" id="mobileMenu">
+        <a
+          href="pages/index.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-800 transition-colors"
+          >خانه</a
+        >
+        <a
+          href="pages/grade5.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >پنجم</a
+        >
+        <a
+          href="pages/grade6.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >ششم</a
+        >
+        <a
+          href="pages/grade7.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >هفتم</a
+        >
+        <a
+          href="pages/grade9.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >نهم</a
+        >
+        <a
+          href="pages/grade10.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >دهم</a
+        >
+        <a
+          href="pages/grade11.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >یازدهم</a
+        >
+        <a
+          href="pages/grade12.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >دوازدهم</a
+        >
+        <a
+          href="pages/teachers.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white bg-purple-700 hover:bg-purple-600 transition-colors"
+          >معرفی اساتید</a
+        >
+        <a
+          href="pages/registration.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >نام‌نویسی</a
+        >
+        <a
+          href="pages/topstudents.html"
+          class="nav-button px-3 py-2 rounded-lg text-sm font-medium text-white hover:bg-purple-600 transition-colors"
+          >نفرات برتر</a
+        >
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto px-4 py-12 flex-1">
+      <h2 class="text-3xl font-bold text-center mb-8">آشنایی با اساتید ما</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Teacher Card 1 -->
+        <div onclick="openModal('teacher1')" class="glass-card p-6 text-center rounded-xl cursor-pointer hover:shadow-xl transition border border-white/20">
+          <img src="../images/teacher1.jpg" alt="Teacher 1" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-white/30" />
+          <h3 class="text-xl font-semibold">آقای احمدی</h3>
+          <p class="text-sm text-purple-100 mt-1">ریاضی</p>
+        </div>
+
+        <!-- Teacher Card 2 -->
+        <div onclick="openModal('teacher2')" class="glass-card p-6 text-center rounded-xl cursor-pointer hover:shadow-xl transition border border-white/20">
+          <img src="../images/teacher2.jpg" alt="Teacher 2" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-white/30" />
+          <h3 class="text-xl font-semibold">خانم رضایی</h3>
+          <p class="text-sm text-purple-100 mt-1">علوم</p>
+        </div>
+
+        <!-- Teacher Card 3 -->
+        <div onclick="openModal('teacher3')" class="glass-card p-6 text-center rounded-xl cursor-pointer hover:shadow-xl transition border border-white/20">
+          <img src="../images/teacher3.jpg" alt="Teacher 3" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-white/30" />
+          <h3 class="text-xl font-semibold">آقای محمدی</h3>
+          <p class="text-sm text-purple-100 mt-1">هوش و استعداد</p>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="teacherModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+      <div class="bg-white text-gray-800 rounded-lg p-6 max-w-md w-full relative shadow-lg">
+        <button onclick="closeModal()" class="absolute top-2 left-2 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+        <h3 id="modalName" class="text-xl font-bold mb-2"></h3>
+        <p id="modalBio" class="text-gray-700 text-sm leading-relaxed"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16 bg-black text-white py-4 text-center">
+      <div class="container mx-auto px-4 text-center">
+        <div class="flex items-center justify-center space-x-4 space-x-reverse mb-4">
+          <h3 class="text-xl font-bold">آموزشگاه علمی آزاد داشنوران</h3>
+        </div>
+        <p class="text-gray-400 mb-4">آماده‌سازی دانش‌آموزان برای موفقیت در آزمون‌های ورودی تیزهوشان و نمونه</p>
+        <div class="border-t border-gray-600 my-4 w-2/3 mx-auto"></div>
+        <div class="flex justify-center space-x-4 space-x-reverse">
+          <a href="https://instagram.com/daneshvaran.gorgan" target="_blank" class="text-gray-300 hover:text-white transition" aria-label="Instagram">📷</a>
+          <a href="https://t.me/Omrani_Amoozesh" target="_blank" class="text-gray-300 hover:text-white transition" aria-label="Telegram">📨</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
