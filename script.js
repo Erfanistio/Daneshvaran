@@ -92,7 +92,7 @@ const teacherData = {
     bio: "Dolor deserunt Lorem fugiat id sint officia occaecat nisi excepteur consectetur consequat exercitation.",
   },
 };
-
+// teacher Modal
 function openModal(id) {
   const modal = document.getElementById("teacherModal");
   document.getElementById("modalName").textContent = teacherData[id].name;
@@ -106,7 +106,8 @@ function closeModal() {
   modal.classList.remove("flex");
   modal.classList.add("hidden");
 }
-
+// Dropdown 
+document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.getElementById("customDropdown");
   const optionsList = document.getElementById("optionsList");
   const selectedValue = document.getElementById("selectedValue");
@@ -137,14 +138,14 @@ function closeModal() {
     });
   });
 
-  // بسته شدن دراپ‌داون هنگام کلیک بیرون
   document.addEventListener("click", (e) => {
     if (!dropdown.contains(e.target) && !optionsList.contains(e.target)) {
       if (isOpen) toggleDropdown();
     }
   });
+});
 
-
+// Submit
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("studentForm");
 
@@ -153,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const formData = new FormData(form);
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycXXXXXX/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwsIkXEf5pgKFwdMZZ-ALsoVPn_tF1HvUJDb_Eqr8jjWzspo1vYNtcvCBmS2LmKc6B_/exec", {
       method: "POST",
       body: formData
     });
