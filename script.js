@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (response.ok) {
-      alert("اطلاعات با موفقیت ارسال شد!, منتظر نماس از طرف ما باشید.");
+      alert("اطلاعات با موفقیت ارسال شد! ، منتظر نماس از طرف ما باشید.");
       form.reset();
     } else {
       alert("خطا در ارسال اطلاعات!");
