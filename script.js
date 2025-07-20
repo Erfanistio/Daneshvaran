@@ -106,3 +106,65 @@ function closeModal() {
   modal.classList.remove("flex");
   modal.classList.add("hidden");
 }
+
+  const dropdown = document.getElementById("customDropdown");
+  const optionsList = document.getElementById("optionsList");
+  const selectedValue = document.getElementById("selectedValue");
+  const hiddenInput = document.getElementById("hiddenGrade");
+
+  let isOpen = false;
+
+  function toggleDropdown() {
+    isOpen = !isOpen;
+    if (isOpen) {
+      optionsList.classList.remove("opacity-0", "pointer-events-none", "-translate-y-2");
+      optionsList.classList.add("opacity-100", "translate-y-0");
+      dropdown.setAttribute("aria-expanded", "true");
+    } else {
+      optionsList.classList.add("opacity-0", "pointer-events-none", "-translate-y-2");
+      optionsList.classList.remove("opacity-100", "translate-y-0");
+      dropdown.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  dropdown.addEventListener("click", toggleDropdown);
+
+  optionsList.querySelectorAll("li").forEach(option => {
+    option.addEventListener("click", () => {
+      selectedValue.textContent = option.textContent;
+      hiddenInput.value = option.textContent;
+      toggleDropdown();
+    });
+  });
+
+  // بسته شدن دراپ‌داون هنگام کلیک بیرون
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target) && !optionsList.contains(e.target)) {
+      if (isOpen) toggleDropdown();
+    }
+  });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("studentForm");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch("https://script.google.com/macros/s/AKfycXXXXXX/exec", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      alert("اطلاعات با موفقیت ارسال شد!");
+      form.reset();
+    } else {
+      alert("خطا در ارسال اطلاعات!");
+    }
+  });
+});
+
+
